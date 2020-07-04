@@ -19,7 +19,7 @@ import json
 # import the css template, and pass the css template into dash
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-application = app.server
+server = app.server
 app.title = "Musician Network - Eric Dolphy"
 
 # read data
@@ -288,5 +288,11 @@ def update_output(dropdown, value):
 #     return json.dumps(clickData, indent=2)
 
 if __name__ == '__main__':
-    application.run(debug=False, port=8080) 
+    app.run_server(debug=False) 
+
+
+# In[ ]:
+
+
+
 
