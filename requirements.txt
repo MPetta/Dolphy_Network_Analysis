@@ -1,6 +1,6 @@
-appnope==0.1.0==py37_0
-attrs==19.3.0==py_0
-backcall==0.1.0==py37_0
+appnope==0.1.0
+attrs==19.3.0
+backcall==0.1.0
 blas==1.0==mkl
 bleach==3.1.4==py_0
 brotlipy==0.7.0==py37h9bfed18_1000
