@@ -87,7 +87,6 @@ pixman==0.38.0==h01d97ff_1003
 plotly==4.7.1==pyh9f0ad1d_0
 prometheus_client==0.7.1==py_0
 prompt-toolkit==3.0.4==py_0
-prompt_toolkit==3.0.4==0
 ptyprocess==0.6.0==py37_0
 pycairo==1.19.1==py37h4e38901_3
 pycparser==2.20==pyh9f0ad1d_2
