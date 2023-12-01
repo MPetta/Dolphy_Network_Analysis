@@ -26,7 +26,7 @@ df = pd.read_csv("ericDolphyDiscog1.csv", encoding='utf_8')
 K = 0.009 # should now be established by slider
 newData = df
 
-##############################################################################################################################################################
+#########################################################################################################
 def network_graph(K, newData):
     # get edge list
     newData['new_col'] = list(zip(newData.Album, newData.Artist))
