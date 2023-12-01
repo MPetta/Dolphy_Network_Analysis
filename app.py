@@ -120,7 +120,7 @@ def network_graph(K, newData):
     fig.layout.plot_bgcolor='rgba(247, 247, 247, 1)'  
     return(fig)
 
-######################################################################################################################################################################
+##################################################################################################
 # styles: for right side hover/click component
 styles = {
     'pre': {
@@ -130,15 +130,15 @@ styles = {
 }
 
 app.layout = html.Div([
-    #########################Title
+    ######################### Title
     html.Div([html.H1("Eric Dolphy Musician Network")],
              className="row",
              style={'textAlign': "center"}),
-    #############################################################################################define the row
+    ############################################################################################# define the row
     html.Div(
         className="row",
         children=[
-            ##############################################left side two input components
+            ############################################## left side two input components
             html.Div(
                 className="two columns",
                 children=[
@@ -218,14 +218,14 @@ app.layout = html.Div([
                 ]
             ),
 
-            ############################################middle graph component
+            ############################################ middle graph component
             html.Div(
                 className="eight columns",
                 children=[dcc.Graph(id="my_graph",
                                     figure= network_graph(K, newData))],
             ),
 
-            #########################################right side two output component
+            ######################################### right side two output component
             html.Div(
                 className="two columns",
                 children=[
@@ -256,7 +256,7 @@ app.layout = html.Div([
     )
 ])
 
-###################################callback for left side components
+################################### callback for left side components
 @app.callback(
     dash.dependencies.Output('my_graph', 'figure'),
     [dash.dependencies.Input('dropdown', 'value'), dash.dependencies.Input('slider_updatemode', 'value')])
