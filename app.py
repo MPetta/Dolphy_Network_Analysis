@@ -21,10 +21,8 @@ server = app.server
 app.title = "Musician Network - Eric Dolphy"
 
 # read data
-df = pd.read_csv("ericDolphyDiscog1.csv", encoding='utf_8')
-
+newData = pd.read_csv("ericDolphyDiscog1.csv", encoding='utf_8')
 K = 0.009 # updated by slider
-newData = df
 
 #########################################################################################################
 def network_graph(K, newData):
